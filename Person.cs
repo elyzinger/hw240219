@@ -49,10 +49,10 @@ namespace Person
                 return new CompareByHeight();
             }
         }
-        public Person()
+        static Person()
         {
-           CompareByName NameComparer = new CompareByName();
-           CompareByID IDComparer = new CompareByID();
+           CompareByName = new CompareByName();
+           CompareByID  = new CompareByID();
             AgeComparer = new CompareByAge();
         }
         public override string ToString()
